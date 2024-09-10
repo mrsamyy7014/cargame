@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<base href="f:\coding\project\2proj\main\css\">
+<script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-image: url(car1.jpg);
+            background-size: cover;
+            transition: .10s;
+
+            animation-name: changebackground;
+            animation-duration: 100s;
+            animation-direction: alternate-reverse;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes changebackground {
+            0% {
+                background-image: url(car1.jpg);
+            }
+
+            55% {
+                background-image: url(car2.jpg);
+            }
+
+            80% {
+                background-image: url(car3.jpg);
+            }
+
+            100% {
+                background-image: url(car4.jpg);
+            }
+
+        }
+
+        #main {
+            width: 400px;
+            height: 520px;
+            border: 1px solid rgb(47, 45, 45);
+            box-shadow: 0px 10px 20px black;
+            position: absolute;
+            text-align: center;
+            left: 32%;
+            top: 10%;
+            padding-top: 2px;
+            padding-left: 1px;
+            padding-right: 1px;
+            overflow: hidden;
+            backdrop-filter: blur(5px);
+        }
+
+        img {
+            width: 200px;
+            position: relative;
+            border: 5px solid red;
+            box-shadow: 0px 0px 50px red;
+            border: none;
+            border-radius: 50%;
+            top: 10px;
+            transition: .10s;
+
+            animation-name: color;
+            animation-duration: 10s;
+            animation-direction: alternate-reverse;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes color {
+
+            0% {
+                box-shadow: 0px 0px 50px red;
+            }
+
+            55% {
+                box-shadow: 0px 0px 50px rgb(197, 249, 26);
+            }
+
+            80% {
+                box-shadow: 0px 0px 50px rgb(33, 40, 239);
+            }
+
+            100% {
+                box-shadow: 0px 0px 50px rgb(198, 46, 240);
+            }
+
+
+        }
+
+        h2 {
+            position: relative;
+            top: 30px;
+            color: rgba(220, 207, 92, 0.923);
+        }
+
+        button {
+            position: relative;
+            width: 210px;
+            height: 70px;
+            top: 25%;
+            border: 2px solid rgba(69, 69, 88, 0.704);
+            position: relative;
+            background-color: transparent;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: antiquewhite;
+            transition: all .3s;
+            background: transparent;
+            cursor: pointer;
+        }
+        button:hover{
+    box-shadow: 0px 0px 20px 0px rgb(230, 120, 120);
+}
+    </style>
+</head>
+
+<body>
+
+    <div id="main">
+        <img src="pro.png" alt="">
+        <h2>SK MODS...</h2>
+        <button onclick="window.open('file:///f:/coding/project/2proj/main/start.html','_parent')">
+            <h1>Back to Menu</h1>
+         
+
+        </button>
+<lord-icon
+    src="https://cdn.lordicon.com/ljvjsnvh.json"
+    trigger="hover"
+    colors="primary:#ffffff,secondary:#ffffff"
+    stroke="55"
+    style="width:40px;height:70px;position: absolute;top: 89.7%;right: 1px; " onclick="window.open('file:///D:/coding/2.css/root%20Pseudo.html','_parent')">
+</lord-icon>
+<lord-icon
+    src="https://cdn.lordicon.com/diihvcfp.json"
+    trigger="hover"
+    colors="primary:#ffffff"
+    style="width:30px;height:60px;position: absolute;top: 90.8%;right: 45px; opacity: 0.7;"  onclick="window.open('file:///D:/coding/2.css/Registration%20Form.html','_parent')">
+</lord-icon>
+    </div>
+
+
+</body>
+
+
+</html>

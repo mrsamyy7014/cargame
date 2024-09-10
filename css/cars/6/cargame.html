@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racing moto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="crontrol"> <h2>RIGHT-</h2>
+        <img id="arrowright" src="arrowright.png" alt="">
+        <h2 id="h2">LEFT-</h2>
+        <img id="arrowleft" src="arrowleft.png" alt="" srcset="">
+       
+
+    </div>
+
+
+    <div id="game">
+        <div id="road"></div>
+        <div id="car-container">
+            <div id="bluecar"><img src="cars1.png" alt=""></div>
+            <div id="racecar"><img src="cars2.png" alt=""></div>
+        </div>
+    </div>
+
+    
+
+    <div id="result">
+        <h1>Game Over</h1>
+        <img src="cry.gif"><br>
+        <p id="score"></p>
+        <button id="btn" class="tbb" onclick="location.reload()">Restart</button>
+        <button id="btn" class="tbb1" onclick="closewindow()">Close Game</button>
+        <button id="btn" class="tbb2" onclick="openwindow()">Manu</button>
+    </div>
+
+    <audio id="jumpsound" src="jumpsound.mp3"></audio>
+    <audio id="gameout" src="gameover3.mp4"></audio>
+    <audio id="mainthim" src="mainthim.mp3"></audio>
+    <script src="main.js">
+
+    </script>
+</body>
+
+</html>

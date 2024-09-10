@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#body {
+    background-image: url(car1.jpg);
+    background-size: cover;
+    transition: .10s;
+
+    animation-name: changebackground;
+    animation-duration: 100s;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes changebackground {
+    0% {
+        background-image: url(car1.jpg);
+    }
+
+    55% {
+        background-image: url(car2.jpg);
+    }
+
+    80% {
+        background-image: url(car3.jpg);
+    }
+
+    100% {
+        background-image: url(car4.jpg);
+    }
+
+
+}
+
+
+
+
+#main {
+    width: 400px;
+    height: 420px;
+    border: 2px solid rgba(70, 68, 68, 0.804);
+    position: absolute;
+    text-align: center;
+    left: 32%;
+    top: 25%;
+    padding-top: 15px;
+    padding-left: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+
+
+}
+
+
+#start {
+    width: 300px;
+    height: 80px;
+    border: 2px solid rgba(187, 187, 192, 0.704);
+    position: absolute;
+    top: 20px;
+    right: 15%;
+    cursor: pointer;
+    background-image: url(button.jpg);
+    background-size: cover;
+    color: antiquewhite;
+    transition: all .3s;
+    background: transparent;
+
+}
+
+
+#help {
+    width: 300px;
+    height: 80px;
+    border: 2px solid rgba(187, 187, 192, 0.704);
+    position: absolute;
+    top: 37%;
+    right: 15%;
+    cursor: pointer;
+    background-image: url(button.jpg);
+    background-size: cover;
+    color: antiquewhite;
+    transition: all .3s;
+    background: transparent;
+
+}
+
+#about {
+    width: 300px;
+    height: 80px;
+    border: 2px solid rgba(187, 187, 192, 0.704);
+    position: absolute;
+    top: 70%;
+    right: 15%;
+    cursor: pointer;
+    background-image: url(button.jpg);
+    background-size: cover;
+    color: antiquewhite;
+    transition: all .3s;
+    background: transparent;
+
+}
+
+#start:hover {
+    /* background-image: url(buttonhover.jpg); */
+    background-size: cover;
+    box-shadow: 0px 0px 20px 0px rgb(230, 120, 120);
+}
+
+#help:hover {
+    /* background-image: url(buttonhover.jpg); */
+    background-size: cover;
+    box-shadow: 0px 0px 20px 0px rgb(230, 120, 120);
+}
+
+#about:hover {
+    /* background-image: url(buttonhover.jpg); */
+    background-size: cover;
+    box-shadow: 0px 0px 20px 0px rgb(230, 120, 120);
+
+}
+
+#thim {
+    display: none;
+    
+}
